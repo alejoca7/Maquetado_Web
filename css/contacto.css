@@ -1,0 +1,271 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Cambia el color de fondo del cuerpo */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 6000px;
+    margin: 0px 350px 0px; /* Ajusta el margen superior para subir el formulario */
+    padding: 10px;
+    background-color: #fff; /* Establece el fondo blanco del contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados al contenedor */
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: #000000;
+}
+/* Estilos del header */
+.header {
+    background-image: url('../img/banner.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: 100% 100%;
+    background-position: 100% 30%;
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior del header */
+}
+
+.header-content {
+    margin: 0px; /* Eliminar todos los márgenes */
+    padding: 0px; /* Mantener el relleno */
+    border-radius: 10px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 36px; /* Tamaño del texto "Título" */
+    font-weight: bold; /* Negritas para "Título" */
+}
+
+.title-bold {
+    font-weight: normal; /* Elimina las negritas para "Tu" */
+}
+
+.header-subtitle {
+    font-size: 24px; /* Tamaño del subtítulo */
+    margin-top: 10px; /* Espacio entre el título y el subtítulo */
+}
+
+/* Estilos para la barra */
+.barra {
+    display: flex;
+    justify-content: space-around; /* Distribuir elementos a los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    padding: auto; /* Espaciado interno de la barra */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para el logotipo */
+.logo {
+    font-size: 20px; /* Tamaño de fuente para el logotipo */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+}
+
+.normal-text {
+    font-weight: normal; /* Sin negrita para "Blog" */
+}
+
+.bold-text {
+    font-weight: bold; /* Negrita para "DeCafé" */
+}
+
+.logo a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #fff; /* Color del texto del logotipo */
+}
+
+/* Estilos para la navegación */
+.navegacion {
+    margin: 0; /* Eliminar margen para la navegación */
+    padding: 0; /* Eliminar relleno para la navegación */
+    list-style: none; /* Eliminar viñetas de la lista (si las hubiera) */
+}
+.navegacion a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px; /* Espacio entre los elementos de la navegación */
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a la izquierda horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior verticalmente */
+    flex-direction: row; /* Apila elementos verticalmente */
+    gap: 20px; /* Espacio entre elementos (puedes ajustarlo según tus necesidades) */
+    text-align: left; /* Alineación de texto a la izquierda para todo el contenido */
+    border-left: 200px solid transparent; /* Agrega un borde izquierdo transparente como margen */
+}
+/* Estilos para .blog y .cursos */
+.blog {
+    flex: 1; /* Distribuir el espacio disponible de manera uniforme entre los elementos principales */
+    padding: 12px; /* Espacio interno para los elementos principales */
+}
+
+/* Estilos para los títulos */
+.entrada-blog h3,
+.cursos h4 {
+    margin: 20px 0; /* Espacio alrededor de los títulos */
+}
+
+/* Estilos para las imágenes */
+.entrada-blog .imagen img,
+.cursos img {
+    width: 1000px; /* La imagen no debe ser más ancha que su contenedor */
+    height: 500px; /* Mantener la proporción de aspecto original */
+    display: block; /* Eliminar el espacio adicional debajo de la imagen */
+    margin: 0; /* Eliminar margen horizontal de la imagen */
+}
+
+/* Estilos para los elementos .no-margin */
+.no-margin {
+    width: 100%; /* Ancho igual al ancho máximo de la imagen */
+    line-height: 1.5;
+}
+
+/* Estilos para el texto justificado */
+.no-margin p {
+    text-align: justify; /* Alineación de texto justificado */  
+}
+
+/* Estilos para el enlace "Leer Más" */
+.btn-primario {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Relleno alrededor del enlace */
+    border: 2px solid black; /* Borde negro */
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilos para el elemento <aside> */
+.cursos {
+    flex: 1; /* Distribuir el espacio disponible de manera uniforme entre los elementos principales */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
+    padding: 20px; /* Espacio interno */
+    margin: 0; /* Eliminar margen */
+}
+
+/* Estilos para el botón "Más Información" */
+.btn-secundario {
+    background-color: #6F4E37; /* Color de fondo café */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Relleno alrededor del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    margin-top: 10px; /* Espacio superior entre botones */
+}
+
+.blog, .cursos {
+    margin-left: 0px; /* Margen izquierdo para dejar espacio en el lado izquierdo */
+    padding: 20px; /* Espacio interno para los elementos principales */
+    flex: 1; /* Distribuir el espacio disponible de manera uniforme entre los elementos principales */
+}
+
+/* Estilos para el footer */
+.site-footer {
+    background-color: black; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 30px 0; /* Espaciado interior del footer */
+}
+
+.site-footer .contenedor {
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenido */
+}
+
+.site-footer .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+}
+
+.site-footer .barra p {
+    margin: 0;
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+.site-footer .barra span {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.site-footer .navegacion {
+    margin-top: 20px; /* Espacio superior entre la línea de texto y los enlaces */
+}
+
+.site-footer .navegacion a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.contenido-blog-nosotros {
+    flex: 1; /* Hace que este div ocupe el espacio disponible */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para las imágenes */
+.nosotros-blog .imagen img,
+.cursos img {
+    width: 1300px; /* La imagen no debe ser más ancha que su contenedor */
+    height: 400px; /* Mantener la proporción de aspecto original */ 
+    margin: 0; /* Eliminar margen horizontal de la imagen */
+    align-items: center;
+}
+
+/* Estilos para el contenido del blog "Nosotros" */
+.nosotros-blog {
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+/* Estilos para la lista de cursos */
+.cursos-lista {
+    list-style: none; /* Elimina las viñetas de la lista */
+}
+
+.cursos-talleres {
+    list-style: none; /* Elimina las viñetas de la lista */
+}
